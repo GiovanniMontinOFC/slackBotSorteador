@@ -1,0 +1,20 @@
+{
+    "name": "giovannimontinofc/bot-sorteador",
+    "description": "O bot deve realizar um sorteio aleatorio a partir de uma lista de nomes e notificar a pessoa mencionada retornando seu nome no Canal do Slack.",
+    "type": "project",
+    "require": {
+        "guzzlehttp/guzzle": "^7.9",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Giovannimontinofc\\BotSorteador\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "GiovanniMontinOFC",
+            "email": "giovannimontinb@gmail.com"
+        }
+    ]
+}
