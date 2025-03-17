@@ -43,8 +43,3 @@ class SlackApi
     }
 
 }
-
-$teste = new SlackApi();
-$membros = $teste->getChannelMembers();
-
-var_dump( $membros);
