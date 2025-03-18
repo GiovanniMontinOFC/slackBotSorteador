@@ -16,6 +16,6 @@ $membros = $teste->getChannelMembers();
 var_dump( $membros);
 
 // Teste de enviar mensagem no canal
-$mensagem = "Olá, este é um teste enviado pelo bot! @{$membros[0]}";
+$mensagem = "Olá, este é um teste enviado pelo bot! <@$membros[1]>";
 $teste->enviarMensagem($mensagem);
 
