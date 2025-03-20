@@ -16,7 +16,7 @@ class TesteHorario
     public function __construct()
     {
         $this->client = new Client();
-        $this->webHookToken = 'https://hooks.slack.com/services/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';
+        $this->webHookToken = SetEnv::getEnv('SLACK_WEBHOOK') ?? throw new \Exception("O seu link WebHook do Slack App (Bot) não foi encontrado. Confira o arquivo .env");
     }
 
     public function enviarMensagem(): void
